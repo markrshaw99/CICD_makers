@@ -21,7 +21,7 @@ jobs:
           username: "ec2-user"
           port: 22
           key: ${{ secrets.EC2_SSH_KEY }}
-          source: "./Dockerfile, ./app.py, ./requirements.txt, ./tests ./autopytest.sh"
+          source: "./Dockerfile, ./app.py, ./requirements.txt, ./tests"
           target: ~/message-server
 
       - name: Build and run on EC2
